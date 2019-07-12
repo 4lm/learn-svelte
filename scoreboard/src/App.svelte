@@ -22,7 +22,9 @@
   <div class="card">
     <h1>
       {name}
-      <button class="btn btn-sm" on:click={toggleControls}>+</button>
+      <button class="btn btn-sm" on:click={toggleControls}>
+        {#if showControls}-{:else}+{/if}
+      </button>
     </h1>
     <h3>{points}</h3>
     {#if showControls}
