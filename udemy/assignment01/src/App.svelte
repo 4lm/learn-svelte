@@ -1,6 +1,6 @@
 <script>
   import CourseGoal from "./CourseGoal.svelte";
-  let goal = "";
+  export let goal;
 </script>
 
 <h1>Assignment</h1>

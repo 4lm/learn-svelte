@@ -1,7 +1,7 @@
 <script>
   export let goal;
 
-  $: hasExclamation = goal.includes('!');
+  $: hasExclamation = goal.includes("!");
 </script>
 
 <style>
