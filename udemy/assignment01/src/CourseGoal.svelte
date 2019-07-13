@@ -1,5 +1,7 @@
 <script>
   export let goal;
+
+  $: hasExclamation = goal.includes('!');
 </script>
 
 <style>
@@ -8,4 +10,4 @@
   }
 </style>
 
-<h1 class={goal.includes('!') ? 'exclamation' : ''}>{goal}</h1>
+<h1 class:exclamation={hasExclamation}>{goal}</h1>
